@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#214e43">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Common Ground">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="description" content="A little space to understand yourself, hear each other, and move forward.">
+  <title>Common Ground — A little space to understand</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a href="#home" class="brand" aria-label="Common Ground home"><span class="brandmark" aria-hidden="true">c<span>g</span></span><span>common<br>ground<span class="brand-caption">ROOM FOR UNDERSTANDING</span></span></a>
+      <div class="sidebar-label">YOUR SPACE</div>
+      <nav aria-label="Main navigation" class="navigation">
+        <a href="#home" data-nav="home"><span aria-hidden="true">◒</span> Find your ground</a>
+        <a href="#learn" data-nav="learn"><span aria-hidden="true">▤</span> Learn to connect</a>
+        <a href="#notes" data-nav="notes"><span aria-hidden="true">▱</span> Session notes</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="small-orbit" aria-hidden="true"></div><p>Understanding can be<br>the first step forward.</p><a href="#about">About & foundations ↗</a><button class="text-button" data-action="privacy">Your privacy</button></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span class="topbar-title">A little space to understand.</span><span class="prototype-label">GUIDED REFLECTION</span><button class="privacy-pill" data-action="privacy"><span aria-hidden="true">◇</span> Privacy</button></header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="footnote">Reflection & communication support. Professional counselling is not provided here.<a href="#about">Our approach ↗</a></footer>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation"><a href="#home" data-nav="home"><span aria-hidden="true">◒</span>Explore</a><a href="#learn" data-nav="learn"><span aria-hidden="true">▤</span>Learn</a><a href="#notes" data-nav="notes"><span aria-hidden="true">▱</span>Notes</a><a href="#about" data-nav="about"><span aria-hidden="true">◇</span>About</a></nav>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-body"></div><button class="button secondary full" data-action="close-modal">Close</button></dialog>
+  <div id="toast" role="status" class="toast"></div>
+  <noscript><p>Enable JavaScript to use the Common Ground exercises.</p></noscript>
+  <script src="content.js?v=5"></script>
+  <script src="runtime-config.js?v=5"></script>
+  <script src="guided.js?v=5"></script>
+  <script src="quick.js?v=5"></script>
+  <script src="app.js?v=5"></script>
+</body>
+</html>

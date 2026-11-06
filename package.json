@@ -1,0 +1,24 @@
+{
+  "name": "common-ground-prototype",
+  "version": "0.2.0",
+  "private": true,
+  "description": "AI guidance, practical options and editable plans across six reflection and dialogue areas.",
+  "scripts": {
+    "preview": "python3 -m http.server 4187 --bind 127.0.0.1 --directory www",
+    "ios:add": "cap add ios",
+    "android:add": "cap add android",
+    "sync": "cap sync",
+    "ios": "cap open ios",
+    "android": "cap open android",
+    "start": "node --env-file-if-exists=.env.local server.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "@capacitor/android": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0"
+  }
+}
